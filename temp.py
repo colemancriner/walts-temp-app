@@ -30,13 +30,13 @@ ceva_zip_reference = get_ceva_zip_reference().copy()
 # join zip coordinates to ceva zips
 ceva_zip_reference = ceva_zip_reference.merge(zip_coordinates,left_on='Zip Code',right_on='Zip',how='inner')
 # CEVA zips per transit
-az_2 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Chandler, AZ 85286') &
+az_2 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Chandler, AZ 85286') & \
                           (ceva_zip_reference['Day Transit']==2)].copy()
-az_3 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Chandler, AZ 85286') &
+az_3 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Chandler, AZ 85286') & \
                           (ceva_zip_reference['Day Transit']==3)].copy()
-tx_2 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Coppell, TX 75019') &
+tx_2 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Coppell, TX 75019') & \
                           (ceva_zip_reference['Day Transit']==2)].copy()
-tx_3 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Coppell, TX 75019') &
+tx_3 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Coppell, TX 75019') & \
                           (ceva_zip_reference['Day Transit']==3)].copy()
 
 # Plot ceva zips on 4 maps
