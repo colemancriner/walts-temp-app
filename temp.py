@@ -56,6 +56,6 @@ with tx_2_col:
     st.subheader('2 Day Transit')
     st.map(tx_2)
 with tx_3_col:
-    st.subheader('2 Day Transit')
+    st.subheader('3 Day Transit')
     st.map(tx_3)
 
