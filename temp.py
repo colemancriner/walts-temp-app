@@ -40,6 +40,7 @@ tx_3 = ceva_zip_reference[(ceva_zip_reference['Origin']=='Origin - Coppell, TX 7
                           (ceva_zip_reference['Day Transit']==3)].copy()
 
 # Plot ceva zips on 4 maps
+st.title('CEVA Zip Codes')
 st.header('Arizona')
 az_2_col, az_3_col = st.columns(2)
 with az_2_col:
