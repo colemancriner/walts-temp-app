@@ -8,7 +8,7 @@ st.set_page_config(page_title='My App',page_icon=':red_triangle_pointed_down:',l
 # Read the zip code coordinates file
 #@st.cache_data
 def get_zip_coordinates():
-    zip_coordinates = pd.read_csv('C:\\Users\\ccrin\\Downloads\\US.txt',sep='\t',header=None)
+    zip_coordinates = pd.read_csv('\\assets\\US.txt',sep='\t',header=None)
     zip_coordinates = zip_coordinates.iloc[:,[1,9,10]]
     zip_coordinates.columns = ['Zip','lat','lon']
     zip_coordinates["Zip"] = zip_coordinates["Zip"].astype(str)
@@ -21,7 +21,7 @@ zip_coordinates = get_zip_coordinates().copy()
 # Read the Ceva zips and zones (zip column = 'Zip Code')
 #@st.cache_data
 def get_ceva_zip_reference():
-    ceva_zip_reference = pd.read_csv('C:\\Users\\ccrin\\Documents\\Walmart\\CEVAxWalts - Zip Guide Regional Deliveries.csv')
+    ceva_zip_reference = pd.read_csv('\\assets\\CEVAxWalts - Zip Guide Regional Deliveries.csv')
     ceva_zip_reference["Zip Code"] = ceva_zip_reference["Zip Code"].astype(str)
     ceva_zip_reference["Zip Code"] = ceva_zip_reference["Zip Code"].str.zfill(5)
     return ceva_zip_reference
