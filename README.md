@@ -13,5 +13,8 @@ Develop an interactive dashboard to visualize delivery zip codes by transit time
 - Map zip codes to longitude and latitude coordinates
 - Generate four interactive maps in Streamlit, displaying 2-day and 3-day transit zones for AZ and TX warehouses.
 
+Dashboard:
+[streamlit-temp-2025-02-20-17-02-12.webm](https://github.com/user-attachments/assets/2a7c1021-a5d6-4a84-869c-96b7aa482841)
+
 ### Result
 Updated shipping templates on Marketplaces to use CEVA shipping when other Freight shipping methods were more expensive or out of delivery range.
