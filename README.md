@@ -13,7 +13,7 @@ Develop an interactive dashboard to visualize delivery zip codes by transit time
 - Map zip codes to longitude and latitude coordinates
 - Generate four interactive maps in Streamlit, displaying 2-day and 3-day transit zones for AZ and TX warehouses.
 
-Dashboard:
+Video of Dashboard:
 [streamlit-temp-2025-02-20-17-02-58.webm](https://github.com/user-attachments/assets/94659a80-9ae1-4bd8-b8ca-89f8c2e35e54)
 
 
